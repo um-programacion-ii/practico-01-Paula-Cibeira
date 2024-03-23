@@ -34,9 +34,9 @@ public class Ingrediente {
     public String toString() {
         return("Ingrediente: " + nombre + " Cantidad: " + cantidad);
     }
-    public void sacar() {
+    public void sacar(int newCant) {
         if(cantidad > 0)
-            cantidad = cantidad - 1;
+            cantidad = cantidad - newCant;
         else
             System.out.println("No hay más" + nombre);
         System.out.println();
